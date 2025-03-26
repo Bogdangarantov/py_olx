@@ -1,4 +1,5 @@
 ![PyPI](https://img.shields.io/pypi/v/py-olx-client)
+![PyPI](https://img.shields.io/pypi/pyversions/py-olx-client)
 # OLX Python Client (py-olx-client)
 
 `py-olx-client` is a Python client library for interacting with the OLX API. It provides an easy way to interact with the OLX platform, allowing you to manage users, ads, and more.
