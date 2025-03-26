@@ -8,3 +8,4 @@ The MIT License Copyright (c) 2025 bogdangarantov
 """
 from .client import OLXClient
 from .auth import OLXAuth
+from .exceptions import OLXAPIError

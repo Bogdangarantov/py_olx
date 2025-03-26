@@ -1,5 +1,5 @@
 import requests
-
+from py_olx.exceptions import OLXAPIError
 
 class OLX:
     """
@@ -133,5 +133,7 @@ class OLX:
         """
         if response.status_code == 200:
             return response.json()
+        elif response.status_code == 400:
+            raise OLXAPIError(response.status_code,f"The OLX API returned an 400 - {response.json()}")
         else:
             raise Exception(f"OLX API error: {response.status_code} - {response.text}")
