@@ -37,7 +37,6 @@ class OLXAuth:
             HTTPError: If the request fails to refresh the token or invalid credentials are provided.
         """
         url = f"{self.BASE_URL}/open/oauth/token"
-        print(url)
         data = {
             "client_id": self.client_id,
             "client_secret": self.client_secret,
@@ -53,7 +52,3 @@ class OLXAuth:
         else:
             raise Exception(f"Failed to refresh access token: {response.status_code} - {response.text}")
 
-
-a = OLXAuth(client_id="202184", client_secret="YZYtWFEtWlbtS85ETWu8SgPgIbqcrtLAbwYEWwl6bk0LLG3x",
-            refresh_token="3da859f79473ab565d0dbd671f95a994af836e14")
-print(a.refresh_access_token())
