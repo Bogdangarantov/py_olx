@@ -1,6 +1,6 @@
-# OLX Python Client (py-olx)
+# OLX Python Client (py-olx-client)
 
-`py-olx` is a Python client library for interacting with the OLX API. It provides an easy way to interact with the OLX platform, allowing you to manage users, ads, and more.
+`py-olx-client` is a Python client library for interacting with the OLX API. It provides an easy way to interact with the OLX platform, allowing you to manage users, ads, and more.
 
 ## Features
 
@@ -14,7 +14,7 @@
 You can install the library via pip:
 
 ```bash
-pip install py-olx
+pip install py-olx-client
 ``` 
 ## 1. Initialize the OLX Client
 You need an OLX API access token to authenticate. Once you have the token, initialize the OLX class.
