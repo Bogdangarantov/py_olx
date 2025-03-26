@@ -59,7 +59,6 @@ class OLX:
             Exception: If the response status code is not 200, an error is raised with the response details.
         """
         url = f"{self.BASE_URL}/{endpoint}"
-        print(url)
         response = requests.get(url, params=params, headers=self.headers, proxies=proxy)
         return self._handle_response(response)
 
@@ -79,7 +78,6 @@ class OLX:
             Exception: If the response status code is not 200, an error is raised with the response details.
         """
         url = f"{self.BASE_URL_V1}/{endpoint}"
-        print(url)
         response = requests.get(url, params=params, headers=self.headers, proxies=proxy)
         return self._handle_response(response)
 
@@ -99,7 +97,6 @@ class OLX:
             Exception: If the response status code is not 200, an error is raised with the response details.
         """
         url = f"{self.BASE_URL_V2}/{endpoint}"
-        print(url)
         response = requests.get(url, params=params, headers=self.headers, proxies=proxy)
         return self._handle_response(response)
 

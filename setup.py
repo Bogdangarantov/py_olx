@@ -7,7 +7,7 @@ def readme():
 
 setup(
     name='py_olx_test',
-    version='0.0.1',
+    version='0.0.2',
     author='its_bohdan',
     author_email='harysh.bogdan@gmail.com',
     description='Python client for interacting with the OLX API',
