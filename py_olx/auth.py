@@ -36,7 +36,7 @@ class OLXAuth:
         Raises:
             HTTPError: If the request fails to refresh the token or invalid credentials are provided.
         """
-        url = f"{self.BASE_URL}/auth/refresh_token"
+        url = f"{self.BASE_URL}/open/auth/refresh_token"
         data = {
             "client_id": self.client_id,
             "client_secret": self.client_secret,
